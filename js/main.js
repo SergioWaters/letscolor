@@ -20,3 +20,12 @@ function wallSlider() {
 
   setInterval(getWallp, 5000)
 }
+
+window.addEventListener('scroll', getNavbarBackground);
+
+function getNavbarBackground() {
+
+  let navbar = document.querySelector('.navbar');
+
+  scrollY > 0 ? navbar.classList.add('navbar__visible') : navbar.classList.remove('navbar__visible')
+}
