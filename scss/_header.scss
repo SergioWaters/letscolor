@@ -1,0 +1,52 @@
+.header{
+  min-height: 60px;
+  background-image: '../img/main/main.jpg';
+}
+.header__inner{
+  height:100vh;
+  background-image: url('../img/main/jpg/main1.jpg');
+  background-color: #222;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.description{
+  min-width: 300px;
+  min-height: 150px;
+  margin: 20px;
+  filter: blur(50);
+  background-color: $colMint;
+
+  &__title{
+    color: #222;
+    text-align: center;
+  }
+}
+
+.slider{
+  background-color: #222;
+  margin: 50px 0px;
+}
+.slider__box{
+  position: relative;
+}
+.slider__pagination{
+  position: absolute;
+  width: 30%;
+  left: 30%;
+  top: 90%;
+}
+.slider__card{  
+  height: 100vh;
+  overflow: hidden;
+}
+.slider__card__img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+

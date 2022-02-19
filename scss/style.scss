@@ -1,0 +1,49 @@
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style-type: none;  
+}
+a{
+  text-decoration: none;  
+}
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.hidden{
+  display: none;
+}
+.invisible{
+  width: 0;
+  height: 0;
+}
+i{
+  margin-right: 5px;
+}
+$colMint: #c6fad2;
+$colVelv: #dd9bcf;
+$colYell: #f6ffee;
+$colRedh: #f48882;
+$colPink: #fad2cc;
+
+// SCSS Миксин:
+// calculates proper font-size and line-height due to viewport
+// many thnx to @youtube Freelancer for life
+$maxWidth: 1000;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+ line-height: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}) * 1.5);
+}
+// @include adaptiv-font(18, 12);
+
+@import '_header.scss';
+@import '_slick.scss';
+@import '_main.scss';
+@import '_footer.scss';
+@import '_navbar.scss';
