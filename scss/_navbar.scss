@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
   background-color: transparent;
   height: 60px;
   margin-bottom: -60px;
@@ -8,28 +8,36 @@
   z-index: 9999;
   text-shadow: 1px 1px 2px #222;
   transform: scale(100%);
-  &__visible{
+
+  &__visible {
     background-color: $colVelv;
   }
 
-  &__inner{
+  &__inner {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+    }
   }
 }
+
 .contacts {
 
-  &__list{
+  &__list {
     display: flex;
     padding: 0;
   }
+
   &__list__item {
     padding: 5px 10px;
     margin: 0px 5px;
     color: #fff;
   }
+
   &__link {
     text-decoration: none;
     color: #fff;
@@ -38,18 +46,21 @@
     color: $colYell;
   }
 }
+
 .nav {
 
   &__list {
     display: flex;
     justify-content: space-between;
   }
+
   &__list__item {
     width: 20%;
     padding: 5px 10px;
-    margin: 0px 5px;    
+    margin: 0px 5px;
   }
-  &__link{
+
+  &__link {
     color: #fff;
     text-transform: uppercase;
     font-size: 18px;
@@ -57,22 +68,26 @@
     color: $colYell;
   }
 }
+
 .socials {
 
   &__list {
     display: flex;
   }
+
   &__list__item {
     padding: 5px 10px;
     margin: 0px 5px;
   }
+
   &__link {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
-    line-height: 20px;    
+    line-height: 20px;
   }
-  &__link i{
+
+  &__link i {
     font-size: 20px;
     color: $colYell;
   }
